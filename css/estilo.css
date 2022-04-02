@@ -1,0 +1,287 @@
+/*Limpar formatações padrão*/
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	background: #fff url(../img/fundo.png) repeat-x top;
+}
+
+#container {
+	width: 750px;
+	margin: 0 auto;
+}
+
+#topo {
+	height: 150px;
+	background: url(../img/detalhe-topo.png) no-repeat right top;
+	padding-top: 25px;
+}
+
+.logo{
+	width: 152px;
+	height: 66px;
+	background: url(../img/logo.png) no-repeat center;
+	text-indent: -3000vh;
+	padding: 5px;
+}
+/*Barra de Navegação Horizontal*/
+
+a:link, a:visited {
+	color: #b10333;
+}
+
+a:hover {
+	color: #e50040;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#menu-horizontal {
+	background: #b10333;
+	margin-top: 30px;
+	float: left;
+}
+
+#menu-horizontal li {
+	float: left;
+}
+
+#menu-horizontal a {
+	font-size: 0.9em;
+	display: block;
+	padding: 0.5em 1.5em;
+	line-height: 2.1em;
+	text-decoration: none;
+	color: #fff;
+	background: url(../img/divisor.png) no-repeat left center;
+}
+
+#menu-horizontal .primeiro a {
+	background: none;
+}
+
+#menu-horizontal a:hover {
+	color: #69001d;
+
+}
+
+/*Marcador do menu*/
+body.Home #menu-horizontal a#Home,
+body.Brasil #menu-horizontal a#Brasil,
+body.Internacional #menu-horizontal a#Internacional,
+body.Economia #menu-horizontal a#Economia,
+body.Saude #menu-horizontal a#Saude,
+body.Ciencia #menu-horizontal a#Ciencia,
+body.Fotos #menu-horizontal a#Fotos {
+	color:#fff;
+	background: #de003e;
+	cursor:text;
+}/*Fim Marcador do menu*/
+
+/*Fim Barra de Navegação Horizontal*/
+
+/*Configuração geral Layout*/
+#conteudo {
+	margin-top: 60px;
+	background: #f5f5f5;
+}/*Fim Configuração geral Layout*/
+
+/*Area conteudo primario*/
+#conteudo-primario {
+	width: 270px;
+	float: left;
+	margin: 0 0 20px 195px;
+}/*Fim Area conteudo primario*/
+
+	/*Editoria Brasil*/
+#Brasil #conteudo-primario {
+	width: 555px;
+}	/*Fim-Editoria Brasil*/
+
+	/*Editoria Fotos*/
+#Fotos #conteudo-primario {
+	width: 750px;
+	float: left;
+	margin: 0 0 20px 0;
+}	/*Fim-Editoria Fotos*/
+
+/*Area conteudo secundario*/
+#conteudo-secundario {
+	width: 270px;
+	float: left;
+	margin: 0 0 20px 15px;
+}/*Fim Area conteudo Secundario*/
+
+/*Area lateral*/
+#conteudo-lateral{
+	width: 180px;
+	float: left;
+	margin: 0 0 20px -750px;
+}
+
+/*Newsletter*/
+#news label{
+	display: block;
+	cursor: pointer;
+}
+
+#news input{
+	padding: 5px;
+	width: 125px;
+	font-size: 0.9em;
+	background: #fff;
+}
+
+#news .submit{
+	width: 80px;
+	color: #FFF;
+	background: #b10333;
+	border: 2px solid #870529;
+	padding: 5px;
+}/*Fim-Newsletter*/
+
+/*Menu menu-entrevista*/
+#menu-entrevista a{
+	font-size: 0.9em;
+	padding: 3px;
+	display: block;
+	line-height: 30px;
+	color: #000;
+	text-decoration: none;
+	border-bottom: 1px solid #f3f3f3;
+	background: #fff;
+}
+
+#menu-entrevista ul a:hover{
+	background: #f9f9f9 url(../img/marcador.png) no-repeat left center;
+	padding-left: 20px;
+	color: #a1a1a1;
+}/*Fim menu-entrevista*/
+
+/*Fim conteudo da area lateral*/
+
+/*Menu mundo*/
+#mundo ul li{
+	padding: 2px;
+	border-bottom: 1px solid #ccc;
+	height: 62px;
+	background: #f9f9f9;
+}
+
+#mundo li a img{
+	float: left;
+	margin: 5px;
+}
+
+#mundo li a{
+	text-decoration: none;
+}
+
+#mundo li h3{
+	font-size: 0.8em;
+	padding: 0;
+	color: #3e7ab9;
+}
+
+#mundo li p{
+	font-size: 0.7em;
+	color: #000;
+}
+
+#mundo ul li:hover{
+	background: #eee;
+	cursor: pointer;
+
+}/*Fim menu mundo*/
+
+/*Menu noticias-recentes*/
+#noticias-recentes ul li{
+	padding: 2px;
+	border-bottom: 1px solid #ccc;
+	height: 62px;
+	background: #f9f9f9;
+}
+
+#noticias-recentes li a img{
+	float: left;
+	margin: 5px;
+}
+
+#noticias-recentes li a{
+	text-decoration: none;
+}
+
+#noticias-recentes li h3{
+	font-size: 0.8em;
+	padding: 0;
+	color: #3e7ab9;
+}
+
+#noticias-recentes li p{
+	font-size: 0.7em;
+}
+
+#noticias-recentes ul li:hover{
+	background: #eee;
+	cursor: pointer;
+
+}/*Fim menu noticias-recentes*/
+
+/*Caixa e Artigos*/
+.caixa{
+	margin: 10px 0;
+	padding: 5px;
+	background: #f3f3f3 url(../img/fundo-caixa.png);
+}
+
+h2{
+	font-size: 1em;
+	background: #294c71;
+	color: #FFF;
+	padding: 5px;
+
+}
+
+/*Chapeu das Materias*/
+.chapeu{
+	text-transform: uppercase;
+	display: inline;
+	font-size: 0.8em;
+	margin-top: 10px;
+	padding: 3px;
+	background: #b10333;
+	color: #fff;
+}/*Fim Chapeu das Materias*/
+
+/*Artigos*/
+img.img-noticia{
+    width: 98%;
+	border: 3px solid #dfdfdf;
+}
+
+.artigo {
+	background: #FFF;
+	padding: 5px;
+	margin-top: 5px;
+}/*Fim artigos*/
+
+/*Caixa e Artigos*/
+
+/*Rodape*/
+#container-rodape{
+	background: #294c71;
+	padding: 20px;
+}
+
+#rodape {
+	width: 750px;
+	margin: 0 auto;
+	color: #fff;
+}
