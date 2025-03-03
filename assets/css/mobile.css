@@ -65,6 +65,10 @@
     .close-menu:checked~.close-menu-label::after {
         content: 'X';
     }
-
     /*Fim-Menu*/
+
+    /*Newsletter*/
+    #news input{
+    width: 50%;
+    }
 }
