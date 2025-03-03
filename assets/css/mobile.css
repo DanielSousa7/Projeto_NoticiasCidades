@@ -1,0 +1,70 @@
+.close-menu{
+    display: none;
+}
+@media (max-width:800px){
+    /*Area conteudo primario*/
+    #conteudo-primario,#conteudo-secundario,#conteudo-lateral {
+        width: 100%;
+        margin: 0;
+    }/*Fim Area conteudo primario*/
+
+	/*Editoria Brasil*/
+    #Brasil #conteudo-primario,
+    #Ciencia #conteudo-primario,
+    #Economia #conteudo-primario,
+    #Internacional #conteudo-primario,
+    #Saude #conteudo-primario {
+        width: 100%;
+    }	/*Fim-Editoria Brasil*/
+    
+        /*Editoria Fotos*/
+    #Fotos #conteudo-primario {
+        width: 100%;
+        float: left;
+        margin: 0 0 20px 0;
+    }	/*Fim-Editoria Fotos*/
+
+    /*Menu*/
+    .menu{
+        margin-top: 50px;
+        bottom: 0;
+        text-align: center;
+    }
+    .menu-content{
+        display: flex;
+        width: 100vw;
+        height: 100%;
+    }
+    .menu-content,.menu-content ul{
+        display: flex;
+        flex-direction: column;
+    }
+    .menu{
+        display: none;
+
+    }
+
+    .close-menu-label::after{
+        content: '☰';
+        position: absolute;
+        z-index: 2;
+        color: white;
+        font-size: 2rem;
+        line-height: 2rem;
+        width: 2rem;
+        height: 2rem;
+        padding: 0.5rem;
+        cursor: pointer;
+    }
+
+    .close-menu:checked~.menu {
+        display: block;
+    }
+
+    
+    .close-menu:checked~.close-menu-label::after {
+        content: 'X';
+    }
+
+    /*Fim-Menu*/
+}

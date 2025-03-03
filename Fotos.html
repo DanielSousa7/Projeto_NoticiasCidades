@@ -5,25 +5,34 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Notícias cidade - Fotos</title>
-        <link rel="stylesheet" href="css/estilo.css">
+        <link rel="stylesheet" href="/assets/css/estilo.css">
+        <link rel="stylesheet" href="/assets/css/mobile.css">
     </head>
 
     <body id="Fotos" class="Fotos">
         <!-- Inicio Container -->
         <div id="container">
             <div id="topo">
-                <h1 class="logo">Notícias cidade</h1>
-
-                <ul id="menu-horizontal">
-                    <li class="Home  primeiro"><a id="Home" href="index.html">Home</a></li>
-                    <li class="Brasil"><a id="Brasil" href="Brasil.html">Brasil</a></li>
-                    <li class="Internacional"><a id="Internacional" href="">Internacional</a></li>
-                    <li class="Economia"><a id="Economia" href="">Economia</a></li>
-                    <li class="Saude"><a id="Saude" href="">Saúde</a></li>
-                    <li class="Ciencia"><a id="Ciencia" href="">Ciência</a></li>
-                    <li class="Fotos"><a id="Fotos" href="Fotos.html">Fotos</a></li>
-                </ul>
-
+                <div class="heading">
+                    <h1 class="logo">Notícias cidade</h1>
+                    <input id="close-menu" class="close-menu" type="checkbox" aria-label="close-menu"role="button">
+                    <label class="close-menu-label" for="close-menu" title="close-menu"></label>
+                    <aside class="menu">
+                        <div>
+                            <nav>
+                                <ul class="menu-content" onclick="getElementById('close-menu').checked = false;" id="menu-horizontal">
+                                    <li class="Home  primeiro"><a id="Home" href="index.html">Home</a></li>
+                                    <li class="Brasil"><a id="Brasil" href="Brasil.html">Brasil</a></li>
+                                    <li class="Internacional"><a id="Internacional" href="Internacional.html">Internacional</a></li>
+                                    <li class="Economia"><a id="Economia" href="economia.html">Economia</a></li>
+                                    <li class="Saude"><a id="Saude" href="saude.html">Saúde</a></li>
+                                    <li class="Ciencia"><a id="Ciencia" href="ciencia.html">Ciência</a></li>
+                                    <li class="Fotos"><a id="Fotos" href="Fotos.html">Fotos</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </aside>
+                </div>
             </div><!-- FIM topo -->
 
             <!--Inicio Conteudo-->
@@ -34,7 +43,7 @@
                         <h2>Últimas Entrevista</h2>
                         <div class="artigo">
                             <h3 class="chapeu">Entrevista com Felipe Silva</h3>
-                            <img class="img-noticia" src="img/doutor.jpg" alt="">
+                            <img class="img-noticia" src="/assets/img/doutor.jpg" alt="">
                             <p>A nova lei altera a regra em relação ao porte obrigatório do documento que comprova o direito de dirigir do condutor do veículo.</p>
                             <a href="">Leia Mais!</a>
                         </div>
@@ -45,25 +54,25 @@
                         <div id="noticias-recentes">
                             <ul>
                                 <li>
-                                    <a href=""><img src="img/esporte.jpg" width="80px" alt=""></a>
+                                    <a href=""><img src="/assets/img/esporte.jpg" width="80px" alt=""></a>
                                     <h3>Esportes</h3>
                                     <p>Copa do Mundo: Brasil enfrenta Sérvia, Suíça e Camarões na 1ª fase...</p>
                                 </li>
 
                                 <li>
-                                    <a href=""><img src="img/doutor.jpg" width="80px" alt=""></a>
+                                    <a href=""><img src="/assets/img/doutor.jpg" width="80px" alt=""></a>
                                     <h3>Saúde</h3>
                                     <p>Covid-19: governo muda regra de oferta de máscaras por empregadores...</p>
                                 </li>
 
                                 <li>
-                                    <a href=""><img src="img/geral.jpg" width="80px" alt=""></a>
+                                    <a href=""><img src="/assets/img/geral.jpg" width="80px" alt=""></a>
                                     <h3>Geral</h3>
                                     <p>General Paulo Sérgio Nogueira assume Ministério da Defesa...</p>
                                 </li>
 
                                 <li>
-                                    <a href=""><img src="img/economia.jpg" width="80px" alt=""></a>
+                                    <a href=""><img src="/assets/img/economia.jpg" width="80px" alt=""></a>
                                     <h3>Economia</h3>
                                     <p>Dólar fecha em R$ 4,66 e alcança menor valor em dois anos...</p>
                                 </li>
@@ -79,7 +88,7 @@
         
         <div id="container-rodape" style="clear: both;">
 			<div id="rodape">
-				&copy; Copyright 2000-2022 Notícias cidade <br>
+				&copy; Copyright 2025 Notícias cidade <br>
                 Desenvolvido por: Daniel Sousa
 			</div>
 		</div>

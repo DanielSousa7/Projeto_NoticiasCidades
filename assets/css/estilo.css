@@ -2,15 +2,23 @@
 * {
 	margin: 0;
 	padding: 0;
+
 }
 
 body{
 	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 	background: #fff url(../img/fundo.png) repeat-x top;
+	min-width: 375px;
+}
+
+.heading{
+	display: flex;
+	flex-direction: column;
+	align-items: right;
 }
 
 #container {
-	width: 750px;
+	max-width: 750px;
 	margin: 0 auto;
 }
 
@@ -101,7 +109,11 @@ body.Fotos #menu-horizontal a#Fotos {
 }/*Fim Area conteudo primario*/
 
 	/*Editoria Brasil*/
-#Brasil #conteudo-primario {
+#Brasil #conteudo-primario,
+#Ciencia #conteudo-primario,
+#Economia #conteudo-primario,
+#Internacional #conteudo-primario,
+#Saude #conteudo-primario {
 	width: 555px;
 }	/*Fim-Editoria Brasil*/
 
@@ -281,7 +293,8 @@ img.img-noticia{
 }
 
 #rodape {
-	width: 750px;
+	text-align: center;
+	width: 100%;
 	margin: 0 auto;
 	color: #fff;
 }
